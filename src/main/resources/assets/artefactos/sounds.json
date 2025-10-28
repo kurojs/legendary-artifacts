@@ -1,0 +1,10 @@
+{
+  "warden": {
+    "sounds": [
+      {
+        "name": "artefactos:y2mate.com-top-scary-minecraft-warden-sounds",
+        "stream": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="Academic Free License v3.0"
+issueTrackerURL="https://github.com/yourusername/artefactos/issues"
+
+[[mods]]
+modId="artefactos"
+version="1.0.0"
+displayName="Artefactos"
+updateJSONURL=""
+displayURL="https://github.com/yourusername/artefactos"
+logoFile=""
+credits="Decompiled and rebuilt for Forge MDK"
+authors="User"
+description='''
+A Minecraft mod that adds powerful artifacts with unique abilities and effects. Each artifact grants special powers to the player.
+'''
+
+[[dependencies.artefactos]]
+    modId="forge"
+    mandatory=true
+    versionRange="[43,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.artefactos]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2]"
+    ordering="NONE"
+    side="BOTH"

@@ -1,0 +1,541 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.8/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Java: 17.0.17, JVM: 17.0.17+10 (Arch Linux), Arch: amd64
+
+> Task :compileJava
+Setting up MCP environment
+Initializing steps
+Executing steps
+ > Running 'downloadManifest'
+ > Running 'downloadJson'
+ > Running 'downloadClient'
+ > Running 'downloadServer'
+ > Running 'extractServer'
+ > Running 'downloadClientMappings'
+ > Running 'mergeMappings'
+ > Running 'stripClient'
+ > Running 'stripServer'
+ > Running 'merge'
+ > Running 'listLibraries'
+ > Running 'rename'
+Stopping at requested step: /home/kuro/.gradle/caches/forge_gradle/mcp_repo/de/oceanlabs/mcp/mcp_config/1.19.2-20220805.130853/joined/rename/output.jar
+[14:54:55] [main/INFO]: Writing debug log file accesstransform.log
+[14:54:55] [main/INFO]: Access Transformer processor running version 8.2.1
+[14:54:55] [main/INFO]: Command line arguments [--inJar, /home/kuro/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.4.0/forge-1.19.2-43.4.0-injected.jar, --outJar, /home/kuro/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.4.0_mapped_official_1.19.2/forge-1.19.2-43.4.0_mapped_official_1.19.2.jar, --logFile, accesstransform.log, --atFile, /home/kuro/Desktop/Work/mods/artefactos/build/_atJar_4/parent_at.cfg]
+[14:54:55] [main/INFO]: Reading from /home/kuro/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.4.0/forge-1.19.2-43.4.0-injected.jar
+[14:54:55] [main/INFO]: Writing to /home/kuro/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.4.0_mapped_official_1.19.2/forge-1.19.2-43.4.0_mapped_official_1.19.2.jar
+[14:54:55] [main/INFO]: Transformer file /home/kuro/Desktop/Work/mods/artefactos/build/_atJar_4/parent_at.cfg
+[14:54:55] [main/WARN]: Found existing output jar /home/kuro/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.4.0_mapped_official_1.19.2/forge-1.19.2-43.4.0_mapped_official_1.19.2.jar, overwriting
+[14:54:57] [main/INFO]: JAR transformation complete /home/kuro/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.19.2-43.4.0_mapped_official_1.19.2/forge-1.19.2-43.4.0_mapped_official_1.19.2.jar
+Creating SRG -> MCP TSRG
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/SdsdsItem.java:18: error: cannot find symbol
+      super(new Properties().m_41491_(CreativeModeTab.f_40753_).m_41487_(1).m_41497_(Rarity.COMMON));
+                                                     ^
+  symbol:   variable f_40753_
+  location: class CreativeModeTab
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/SdsdsItem.java:27: error: cannot find symbol
+      InteractionResultHolder<ItemStack> ar = super.m_7203_(world, entity, hand);
+                                                   ^
+  symbol: method m_7203_(Level,Player,InteractionHand)
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/SdsdsItem.java:28: error: cannot find symbol
+      ItemStack itemstack = (ItemStack)ar.m_19095_();
+                                         ^
+  symbol:   method m_19095_()
+  location: variable ar of type InteractionResultHolder<ItemStack>
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/SdsdsItem.java:29: error: cannot find symbol
+      double x = entity.m_20185_();
+                       ^
+  symbol:   method m_20185_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/SdsdsItem.java:30: error: cannot find symbol
+      double y = entity.m_20186_();
+                       ^
+  symbol:   method m_20186_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/SdsdsItem.java:31: error: cannot find symbol
+      double z = entity.m_20189_();
+                       ^
+  symbol:   method m_20189_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/SdfsdfItem.java:18: error: cannot find symbol
+      super(new Properties().m_41491_(CreativeModeTab.f_40753_).m_41487_(1).m_41497_(Rarity.EPIC));
+                                                     ^
+  symbol:   variable f_40753_
+  location: class CreativeModeTab
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/SdfsdfItem.java:27: error: cannot find symbol
+      InteractionResultHolder<ItemStack> ar = super.m_7203_(world, entity, hand);
+                                                   ^
+  symbol: method m_7203_(Level,Player,InteractionHand)
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/SdfsdfItem.java:28: error: cannot find symbol
+      ItemStack itemstack = (ItemStack)ar.m_19095_();
+                                         ^
+  symbol:   method m_19095_()
+  location: variable ar of type InteractionResultHolder<ItemStack>
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/SdfsdfItem.java:29: error: cannot find symbol
+      double x = entity.m_20185_();
+                       ^
+  symbol:   method m_20185_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/SdfsdfItem.java:30: error: cannot find symbol
+      double y = entity.m_20186_();
+                       ^
+  symbol:   method m_20186_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/SdfsdfItem.java:31: error: cannot find symbol
+      double z = entity.m_20189_();
+                       ^
+  symbol:   method m_20189_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/FdfdfItem.java:18: error: cannot find symbol
+      super(new Properties().m_41491_(CreativeModeTab.f_40753_).m_41487_(1).m_41497_(Rarity.EPIC));
+                                                     ^
+  symbol:   variable f_40753_
+  location: class CreativeModeTab
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/FdfdfItem.java:27: error: cannot find symbol
+      InteractionResultHolder<ItemStack> ar = super.m_7203_(world, entity, hand);
+                                                   ^
+  symbol: method m_7203_(Level,Player,InteractionHand)
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/FdfdfItem.java:28: error: cannot find symbol
+      ItemStack itemstack = (ItemStack)ar.m_19095_();
+                                         ^
+  symbol:   method m_19095_()
+  location: variable ar of type InteractionResultHolder<ItemStack>
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/FdfdfItem.java:29: error: cannot find symbol
+      double x = entity.m_20185_();
+                       ^
+  symbol:   method m_20185_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/FdfdfItem.java:30: error: cannot find symbol
+      double y = entity.m_20186_();
+                       ^
+  symbol:   method m_20186_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/FdfdfItem.java:31: error: cannot find symbol
+      double z = entity.m_20189_();
+                       ^
+  symbol:   method m_20189_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/KljItem.java:18: error: cannot find symbol
+      super(new Properties().m_41491_(CreativeModeTab.f_40753_).m_41487_(1).m_41497_(Rarity.COMMON));
+                                                     ^
+  symbol:   variable f_40753_
+  location: class CreativeModeTab
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/KljItem.java:27: error: cannot find symbol
+      InteractionResultHolder<ItemStack> ar = super.m_7203_(world, entity, hand);
+                                                   ^
+  symbol: method m_7203_(Level,Player,InteractionHand)
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/KljItem.java:28: error: cannot find symbol
+      ItemStack itemstack = (ItemStack)ar.m_19095_();
+                                         ^
+  symbol:   method m_19095_()
+  location: variable ar of type InteractionResultHolder<ItemStack>
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/KljItem.java:29: error: cannot find symbol
+      double x = entity.m_20185_();
+                       ^
+  symbol:   method m_20185_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/KljItem.java:30: error: cannot find symbol
+      double y = entity.m_20186_();
+                       ^
+  symbol:   method m_20186_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/KljItem.java:31: error: cannot find symbol
+      double z = entity.m_20189_();
+                       ^
+  symbol:   method m_20189_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/DsdfsdfItem.java:18: error: cannot find symbol
+      super(new Properties().m_41491_(CreativeModeTab.f_40753_).m_41487_(1).m_41497_(Rarity.COMMON));
+                                                     ^
+  symbol:   variable f_40753_
+  location: class CreativeModeTab
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/DsdfsdfItem.java:27: error: cannot find symbol
+      InteractionResultHolder<ItemStack> ar = super.m_7203_(world, entity, hand);
+                                                   ^
+  symbol: method m_7203_(Level,Player,InteractionHand)
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/DsdfsdfItem.java:28: error: cannot find symbol
+      ItemStack itemstack = (ItemStack)ar.m_19095_();
+                                         ^
+  symbol:   method m_19095_()
+  location: variable ar of type InteractionResultHolder<ItemStack>
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/DsdfsdfItem.java:29: error: cannot find symbol
+      double x = entity.m_20185_();
+                       ^
+  symbol:   method m_20185_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/DsdfsdfItem.java:30: error: cannot find symbol
+      double y = entity.m_20186_();
+                       ^
+  symbol:   method m_20186_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/DsdfsdfItem.java:31: error: cannot find symbol
+      double z = entity.m_20189_();
+                       ^
+  symbol:   method m_20189_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/CbbcvItem.java:18: error: cannot find symbol
+      super(new Properties().m_41491_(CreativeModeTab.f_40753_).m_41487_(1).m_41497_(Rarity.EPIC));
+                                                     ^
+  symbol:   variable f_40753_
+  location: class CreativeModeTab
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/CbbcvItem.java:27: error: cannot find symbol
+      InteractionResultHolder<ItemStack> ar = super.m_7203_(world, entity, hand);
+                                                   ^
+  symbol: method m_7203_(Level,Player,InteractionHand)
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/CbbcvItem.java:28: error: cannot find symbol
+      ItemStack itemstack = (ItemStack)ar.m_19095_();
+                                         ^
+  symbol:   method m_19095_()
+  location: variable ar of type InteractionResultHolder<ItemStack>
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/CbbcvItem.java:29: error: cannot find symbol
+      double x = entity.m_20185_();
+                       ^
+  symbol:   method m_20185_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/CbbcvItem.java:30: error: cannot find symbol
+      double y = entity.m_20186_();
+                       ^
+  symbol:   method m_20186_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/CbbcvItem.java:31: error: cannot find symbol
+      double z = entity.m_20189_();
+                       ^
+  symbol:   method m_20189_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/DfdfItem.java:17: error: cannot find symbol
+      super(new Properties().m_41491_(CreativeModeTab.f_40753_).m_41487_(1).m_41497_(Rarity.EPIC));
+                                                     ^
+  symbol:   variable f_40753_
+  location: class CreativeModeTab
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/DfdfItem.java:26: error: cannot find symbol
+      super.m_7373_(itemstack, world, list, flag);
+           ^
+  symbol: method m_7373_(ItemStack,Level,List<Component>,TooltipFlag)
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/DfdfItem.java:27: error: cannot find symbol
+      list.add(Component.m_237113_("Mejora la Manza de Notch"));
+                        ^
+  symbol:   method m_237113_(String)
+  location: interface Component
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/DsfsdfItem.java:18: error: cannot find symbol
+      super(new Properties().m_41491_(CreativeModeTab.f_40753_).m_41487_(1).m_41497_(Rarity.EPIC));
+                                                     ^
+  symbol:   variable f_40753_
+  location: class CreativeModeTab
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/DsfsdfItem.java:27: error: cannot find symbol
+      InteractionResultHolder<ItemStack> ar = super.m_7203_(world, entity, hand);
+                                                   ^
+  symbol: method m_7203_(Level,Player,InteractionHand)
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/DsfsdfItem.java:28: error: cannot find symbol
+      ItemStack itemstack = (ItemStack)ar.m_19095_();
+                                         ^
+  symbol:   method m_19095_()
+  location: variable ar of type InteractionResultHolder<ItemStack>
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/DsfsdfItem.java:29: error: cannot find symbol
+      double x = entity.m_20185_();
+                       ^
+  symbol:   method m_20185_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/DsfsdfItem.java:30: error: cannot find symbol
+      double y = entity.m_20186_();
+                       ^
+  symbol:   method m_20186_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/item/DsfsdfItem.java:31: error: cannot find symbol
+      double z = entity.m_20189_();
+                       ^
+  symbol:   method m_20189_()
+  location: variable entity of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/ClerigoProcedure.java:26: error: cannot find symbol
+            _level.m_8767_(ParticleTypes.f_123750_, x, y, z, 1200, 3.0, 3.0, 3.0, 1.0);
+                                        ^
+  symbol:   variable f_123750_
+  location: class ParticleTypes
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/ClerigoProcedure.java:31: error: cannot find symbol
+         for (Entity entityiterator : world.m_6443_(Entity.class, new AABB(_center, _center).m_82400_(10.0), e -> true)
+                                                                                            ^
+  symbol:   method m_82400_(double)
+  location: class AABB
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/ClerigoProcedure.java:33: error: cannot find symbol
+            .sorted(Comparator.comparingDouble(_entcnd -> _entcnd.m_20238_(_center)))
+                                                                 ^
+  symbol:   method m_20238_(Vec3)
+  location: variable _entcnd of type Object
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/ClerigoProcedure.java:38: error: cannot find symbol
+                     _entity.m_21195_(MobEffects.f_19617_);
+                                                ^
+  symbol:   variable f_19617_
+  location: class MobEffects
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/ClerigoProcedure.java:42: error: cannot find symbol
+                     _entity.m_21195_(MobEffects.f_19605_);
+                                                ^
+  symbol:   variable f_19605_
+  location: class MobEffects
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/ClerigoProcedure.java:48: error: cannot find symbol
+                  if (!_entity.f_19853_.m_5776_()) {
+                              ^
+  symbol:   variable f_19853_
+  location: variable _entity of type LivingEntity
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/ClerigoProcedure.java:49: error: cannot find symbol
+                     _entity.m_7292_(new MobEffectInstance(MobEffects.f_19617_, 1200, 9, false, true));
+                                                                     ^
+  symbol:   variable f_19617_
+  location: class MobEffects
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/ClerigoProcedure.java:49: error: cannot find symbol
+                     _entity.m_7292_(new MobEffectInstance(MobEffects.f_19617_, 1200, 9, false, true));
+                            ^
+  symbol:   method m_7292_(MobEffectInstance)
+  location: variable _entity of type LivingEntity
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/ClerigoProcedure.java:55: error: cannot find symbol
+                  if (!_entity.f_19853_.m_5776_()) {
+                              ^
+  symbol:   variable f_19853_
+  location: variable _entity of type LivingEntity
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/ClerigoProcedure.java:56: error: cannot find symbol
+                     _entity.m_7292_(new MobEffectInstance(MobEffects.f_19605_, 600, 2, false, true));
+                                                                     ^
+  symbol:   variable f_19605_
+  location: class MobEffects
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/ClerigoProcedure.java:56: error: cannot find symbol
+                     _entity.m_7292_(new MobEffectInstance(MobEffects.f_19605_, 600, 2, false, true));
+                            ^
+  symbol:   method m_7292_(MobEffectInstance)
+  location: variable _entity of type LivingEntity
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/ClerigoProcedure.java:64: error: cannot find symbol
+            _player.m_150109_().m_36022_(p -> _stktoremove.m_41720_() == p.m_41720_(), 1, _player.f_36095_.m_39730_());
+                   ^
+  symbol:   method m_150109_()
+  location: variable _player of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/ClerigoProcedure.java:64: error: cannot find symbol
+            _player.m_150109_().m_36022_(p -> _stktoremove.m_41720_() == p.m_41720_(), 1, _player.f_36095_.m_39730_());
+                                                          ^
+  symbol:   method m_41720_()
+  location: variable _stktoremove of type ItemStack
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/ClerigoProcedure.java:64: error: cannot find symbol
+            _player.m_150109_().m_36022_(p -> _stktoremove.m_41720_() == p.m_41720_(), 1, _player.f_36095_.m_39730_());
+                                                                                                 ^
+  symbol:   variable f_36095_
+  location: variable _player of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/ClerigoProcedure.java:68: error: cannot find symbol
+            _player.m_36335_().m_41524_(itemstack.m_41720_(), 6000);
+                   ^
+  symbol:   method m_36335_()
+  location: variable _player of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/ClerigoProcedure.java:68: error: cannot find symbol
+            _player.m_36335_().m_41524_(itemstack.m_41720_(), 6000);
+                                                 ^
+  symbol:   method m_41720_()
+  location: variable itemstack of type ItemStack
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/WardenProcedure.java:32: error: cannot find symbol
+            if (!_level.m_5776_()) {
+                       ^
+  symbol:   method m_5776_()
+  location: variable _level of type Level
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/WardenProcedure.java:33: error: cannot find symbol
+               _level.m_5594_(
+                     ^
+  symbol:   method m_5594_(<null>,BlockPos,SoundEvent,SoundSource,float,float)
+  location: variable _level of type Level
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/WardenProcedure.java:42: error: cannot find symbol
+               _level.m_7785_(
+                     ^
+  symbol:   method m_7785_(double,double,double,SoundEvent,SoundSource,float,float,boolean)
+  location: variable _level of type Level
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/WardenProcedure.java:49: error: cannot find symbol
+            _levelx.m_8767_(ParticleTypes.f_123813_, x, y, z, 5, 3.0, 3.0, 3.0, 1.0);
+                                         ^
+  symbol:   variable f_123813_
+  location: class ParticleTypes
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/WardenProcedure.java:54: error: cannot find symbol
+         for (Entity entityiterator : world.m_6443_(Entity.class, new AABB(_center, _center).m_82400_(10.0), e -> true)
+                                                                                            ^
+  symbol:   method m_82400_(double)
+  location: class AABB
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/WardenProcedure.java:56: error: cannot find symbol
+            .sorted(Comparator.comparingDouble(_entcnd -> _entcnd.m_20238_(_center)))
+                                                                 ^
+  symbol:   method m_20238_(Vec3)
+  location: variable _entcnd of type Object
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/WardenProcedure.java:61: error: cannot find symbol
+                     _entity.m_21195_(MobEffects.f_216964_);
+                                                ^
+  symbol:   variable f_216964_
+  location: class MobEffects
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/WardenProcedure.java:65: error: cannot find symbol
+                     _entity.m_21195_(MobEffects.f_19612_);
+                                                ^
+  symbol:   variable f_19612_
+  location: class MobEffects
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/WardenProcedure.java:71: error: cannot find symbol
+                  if (!_entity.f_19853_.m_5776_()) {
+                              ^
+  symbol:   variable f_19853_
+  location: variable _entity of type LivingEntity
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/WardenProcedure.java:72: error: cannot find symbol
+                     _entity.m_7292_(new MobEffectInstance(MobEffects.f_216964_, 800, 1, false, true));
+                                                                     ^
+  symbol:   variable f_216964_
+  location: class MobEffects
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/WardenProcedure.java:72: error: cannot find symbol
+                     _entity.m_7292_(new MobEffectInstance(MobEffects.f_216964_, 800, 1, false, true));
+                            ^
+  symbol:   method m_7292_(MobEffectInstance)
+  location: variable _entity of type LivingEntity
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/WardenProcedure.java:78: error: cannot find symbol
+                  if (!_entity.f_19853_.m_5776_()) {
+                              ^
+  symbol:   variable f_19853_
+  location: variable _entity of type LivingEntity
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/WardenProcedure.java:79: error: cannot find symbol
+                     _entity.m_7292_(new MobEffectInstance(MobEffects.f_19612_, 1200, 1, false, true));
+                                                                     ^
+  symbol:   variable f_19612_
+  location: class MobEffects
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/WardenProcedure.java:79: error: cannot find symbol
+                     _entity.m_7292_(new MobEffectInstance(MobEffects.f_19612_, 1200, 1, false, true));
+                            ^
+  symbol:   method m_7292_(MobEffectInstance)
+  location: variable _entity of type LivingEntity
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/WardenProcedure.java:87: error: cannot find symbol
+            _player.m_150109_().m_36022_(p -> _stktoremove.m_41720_() == p.m_41720_(), 1, _player.f_36095_.m_39730_());
+                   ^
+  symbol:   method m_150109_()
+  location: variable _player of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/WardenProcedure.java:87: error: cannot find symbol
+            _player.m_150109_().m_36022_(p -> _stktoremove.m_41720_() == p.m_41720_(), 1, _player.f_36095_.m_39730_());
+                                                          ^
+  symbol:   method m_41720_()
+  location: variable _stktoremove of type ItemStack
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/WardenProcedure.java:87: error: cannot find symbol
+            _player.m_150109_().m_36022_(p -> _stktoremove.m_41720_() == p.m_41720_(), 1, _player.f_36095_.m_39730_());
+                                                                                                 ^
+  symbol:   variable f_36095_
+  location: variable _player of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/WardenProcedure.java:91: error: cannot find symbol
+            _player.m_36335_().m_41524_(itemstack.m_41720_(), 6000);
+                   ^
+  symbol:   method m_36335_()
+  location: variable _player of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/WardenProcedure.java:91: error: cannot find symbol
+            _player.m_36335_().m_41524_(itemstack.m_41720_(), 6000);
+                                                 ^
+  symbol:   method m_41720_()
+  location: variable itemstack of type ItemStack
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/CorazondehydraProcedure.java:26: error: cannot find symbol
+            _level.m_8767_(ParticleTypes.f_123770_, x, y, z, 600, 3.0, 3.0, 3.0, 1.0);
+                                        ^
+  symbol:   variable f_123770_
+  location: class ParticleTypes
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/CorazondehydraProcedure.java:31: error: cannot find symbol
+         for (Entity entityiterator : world.m_6443_(Entity.class, new AABB(_center, _center).m_82400_(10.0), e -> true)
+                                                                                            ^
+  symbol:   method m_82400_(double)
+  location: class AABB
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/CorazondehydraProcedure.java:33: error: cannot find symbol
+            .sorted(Comparator.comparingDouble(_entcnd -> _entcnd.m_20238_(_center)))
+                                                                 ^
+  symbol:   method m_20238_(Vec3)
+  location: variable _entcnd of type Object
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/CorazondehydraProcedure.java:38: error: cannot find symbol
+                     _entity.m_21195_(MobEffects.f_19614_);
+                                                ^
+  symbol:   variable f_19614_
+  location: class MobEffects
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/CorazondehydraProcedure.java:42: error: cannot find symbol
+                     _entity.m_21195_(MobEffects.f_19604_);
+                                                ^
+  symbol:   variable f_19604_
+  location: class MobEffects
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/CorazondehydraProcedure.java:48: error: cannot find symbol
+                  if (!_entity.f_19853_.m_5776_()) {
+                              ^
+  symbol:   variable f_19853_
+  location: variable _entity of type LivingEntity
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/CorazondehydraProcedure.java:49: error: cannot find symbol
+                     _entity.m_7292_(new MobEffectInstance(MobEffects.f_19614_, 1200, 1, false, true));
+                                                                     ^
+  symbol:   variable f_19614_
+  location: class MobEffects
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/CorazondehydraProcedure.java:49: error: cannot find symbol
+                     _entity.m_7292_(new MobEffectInstance(MobEffects.f_19614_, 1200, 1, false, true));
+                            ^
+  symbol:   method m_7292_(MobEffectInstance)
+  location: variable _entity of type LivingEntity
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/CorazondehydraProcedure.java:55: error: cannot find symbol
+                  if (!_entity.f_19853_.m_5776_()) {
+                              ^
+  symbol:   variable f_19853_
+  location: variable _entity of type LivingEntity
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/CorazondehydraProcedure.java:56: error: cannot find symbol
+                     _entity.m_7292_(new MobEffectInstance(MobEffects.f_19604_, 300, 1, false, true));
+                                                                     ^
+  symbol:   variable f_19604_
+  location: class MobEffects
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/CorazondehydraProcedure.java:56: error: cannot find symbol
+                     _entity.m_7292_(new MobEffectInstance(MobEffects.f_19604_, 300, 1, false, true));
+                            ^
+  symbol:   method m_7292_(MobEffectInstance)
+  location: variable _entity of type LivingEntity
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/CorazondehydraProcedure.java:64: error: cannot find symbol
+            _player.m_150109_().m_36022_(p -> _stktoremove.m_41720_() == p.m_41720_(), 1, _player.f_36095_.m_39730_());
+                   ^
+  symbol:   method m_150109_()
+  location: variable _player of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/CorazondehydraProcedure.java:64: error: cannot find symbol
+            _player.m_150109_().m_36022_(p -> _stktoremove.m_41720_() == p.m_41720_(), 1, _player.f_36095_.m_39730_());
+                                                          ^
+  symbol:   method m_41720_()
+  location: variable _stktoremove of type ItemStack
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/CorazondehydraProcedure.java:64: error: cannot find symbol
+            _player.m_150109_().m_36022_(p -> _stktoremove.m_41720_() == p.m_41720_(), 1, _player.f_36095_.m_39730_());
+                                                                                                 ^
+  symbol:   variable f_36095_
+  location: variable _player of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/CorazondehydraProcedure.java:68: error: cannot find symbol
+            _player.m_36335_().m_41524_(itemstack.m_41720_(), 6000);
+                   ^
+  symbol:   method m_36335_()
+  location: variable _player of type Player
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/CorazondehydraProcedure.java:68: error: cannot find symbol
+            _player.m_36335_().m_41524_(itemstack.m_41720_(), 6000);
+                                                 ^
+  symbol:   method m_41720_()
+  location: variable itemstack of type ItemStack
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/CalizProcedure.java:26: error: cannot find symbol
+            _level.m_8767_(ParticleTypes.f_123767_, x, y, z, 1200, 20.0, 20.0, 3.0, 1.0);
+                                        ^
+  symbol:   variable f_123767_
+  location: class ParticleTypes
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/CalizProcedure.java:31: error: cannot find symbol
+         for (Entity entityiterator : world.m_6443_(Entity.class, new AABB(_center, _center).m_82400_(10.0), e -> true)
+                                                                                            ^
+  symbol:   method m_82400_(double)
+  location: class AABB
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/CalizProcedure.java:33: error: cannot find symbol
+            .sorted(Comparator.comparingDouble(_entcnd -> _entcnd.m_20238_(_center)))
+                                                                 ^
+  symbol:   method m_20238_(Vec3)
+  location: variable _entcnd of type Object
+/home/kuro/Desktop/Work/mods/artefactos/src/main/java/net/mcreator/artefactos/procedures/CalizProcedure.java:38: error: cannot find symbol
+                     _entity.m_21195_(MobEffects.f_19601_);
+                                                ^
+  symbol:   variable f_19601_
+  location: class MobEffects
+100 errors
+only showing the first 100 errors, of 159 total; use -Xmaxerrs if you would like to see more
+
+> Task :compileJava FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+> Run with --info option to get more log output.
+> Run with --scan to get full insights.
+
+BUILD FAILED in 3m 37s
+1 actionable task: 1 executed
