@@ -4,6 +4,8 @@ A Minecraft mod featuring powerful legendary artifacts with special abilities an
 
 ## Features
 
+![Artifacts Preview](https://i.imgur.com/J1e1fHM.png)
+
 ### Artifacts
 
 - **Amuleto de Brujo** (Warlock's Amulet) - Grants powerful magical abilities
